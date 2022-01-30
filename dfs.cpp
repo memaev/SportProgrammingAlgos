@@ -7,14 +7,13 @@ vector<vector<int>> a(N); //граф, представленный в виде матрицы смежности
 vector<int> visited(N, false);
 
 int dfs(int s){ //s - искомая вершина
-0    if (visited[s]) return; //если данная вершина уже посещена, то пропускаем ее
+    if (visited[s]) return; //если данная вершина уже посещена, то пропускаем ее
     visisted[s]=true;
     //обработать вершину s
     for (auto u: a[s])
         dfs(u);
-        dfs(u);
 }
 
-int main (){
+signed main (){
 
 }
